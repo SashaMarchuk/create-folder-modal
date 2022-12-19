@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <form>
+      <button id="close" type="reset">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1L1 11M1 1L11 11" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="section">
+        <h1>Create new folder</h1>
+        <div class="section">
+          <h2>Folder name</h2>
+          <input type="text" class="folderName" name="folder" required placeholder="My folder">
+        </div>
+      </div>
+  
+      <div class="section">
+        <h2>Folder color</h2>
+        <fieldset id="colors" name="colors" required></fieldset>
+      </div>
+  
+      <div class="section">
+        <h2>Filter member groups</h2>
+        <fieldset id="groups">
+          <div>
+            <input id="on" name="group" type="radio" checked="true">
+            <label for="on">All</label>
+          </div>
+        </fieldset>
+      </div>
+  
+      <div class="section">
+        <h2>Member access</h2>
+        <div id="members"></div>
+      </div>
+  
+      <button type="submit" class="submitBtn">Create folder</button>
+    </form>
+	</div>
+  <script src="./script.js"></script>
+</body>
+</html>
